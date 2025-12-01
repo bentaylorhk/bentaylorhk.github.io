@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ThreeScene from '../components/ThreeScene';
 
 const Home = () => {
@@ -13,18 +14,18 @@ const Home = () => {
               Hi, I'm a developer passionate about creating beautiful and functional web experiences.
             </p>
             <div className="space-x-4">
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
               >
                 Learn More
-              </a>
-              <a
-                href="/projects"
+              </Link>
+              <Link
+                to="/projects"
                 className="inline-block bg-gray-200 text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-300 transition-colors"
               >
                 View Projects
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2 h-96 md:h-screen">
